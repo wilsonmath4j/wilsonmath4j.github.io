@@ -1,0 +1,151 @@
+body {
+    background-color: #033b74;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  .navigation ul {
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .navigation li {
+    font-weight: 200;
+    letter-spacing: .2rem;
+    color:  lightgray;
+    display:inline;
+    padding: 10px 40px;
+
+  }
+  
+  .navigation  li.logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  
+  .navigation a {
+    color:  white;
+    text-decoration: none;
+  }
+
+  .navigation a:hover{
+    color:  white;
+    font-weight:    800;
+    text-decoration: none;
+  }
+
+  #banner {
+    background-image: url("https://lh3.googleusercontent.com/8ockrPNEDNF3BzQ5GXrT9vcFkoekuHX8zFUsu0TMcQ5hB1DKLoGiZH07h_m4LXztm53zEo6eI2I3KsHDiloU4BLxeKQaFYSak83IxL749nvKD5jL3g9It9AUDrtEaGpLz98v2ABpZS_H_rNNzRcygaxOexBHAULHhIDO3GUqi3gaeekESaOUK4dJtWMUmx0cyQzbnEhAuHg7u2aAIZ6Pgo_juSRifT55O8EWq-GizW-sePFk9VrHCTBJ2Rk_jge5GbBJ9pEaxOVgEBm9xB0xqsIRhV2BkhWcjx1r2REqCfHakUi5Wiq2TT9Beooo-TeAK0k-wS21ZyDIfx4Trcj7EvKDRNqGJpdZfJrcp7rvqVYeKkYioDgVM00RDBADvACs0eBBaa5leRbvlrfX_llywD8qdWEdgXk7F093qwMXPPmOiNNUDDOwn1J9M1-Rb7kHvUSuEhOkBhypD9xehpmcrUFDCL6Td39gMjojGhL9Tv45tKLygLZjT3s7ZYPPv_6dkLSCJCT_pyC3M5lC9-wmV4ZLnrQ9o6F6d-V5EzSuoW4HYD8eGTr_8JHdvuOJpo5DmhNBG7ZP60WLtluIPtd-oNbnCLfXJeqWNtmQfrnfTm85n_cQ0BgejZ3umoi1RtWIhkdjbqS26O_Z4_dfBplc6JCMV_TmDvwHG6WYe1iXGcVJp2zP3wK5u4nBdiu2xw=w1435-h238-no?authuser=0");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    opacity: 0.75;
+    border-radius: 5px;
+  }
+  /*Ask Nikole how to vertically center the box of text THOU SHALT NOT DO IT*/
+  #banner .content  {
+    border: 4px solid black;
+    background: rgba(255, 255, 255, 0.3);
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+  }
+
+  #banner .content h1 {
+    color: rgb(24, 18, 18);
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-style: bold;
+  }
+  
+  #main {
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    width: 50%;  
+    height: 500px; 
+  }
+  
+  h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  h2 {
+    border: 1px dotted red;
+    color: red;
+    font-size: 14px;
+    line-height: 48px;
+    padding: 20px 30px;
+    margin: 30px 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: red;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 20px 10px;
+  }
+  
+  p {
+    color: lightgrey;
+    font-size: 16px;
+    line-height: 48px;
+    margin-top: 60px;
+    font-weight: 200;
+    border-left: dotted 3px lightblue;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  .pull-quote {
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  .byline {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid gray;
+    color: lightgray;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+  
+  .share {
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .share a {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .share a:hover {
+    background: white;
+    border: 1px solid red;
+    color: red;
+  }
