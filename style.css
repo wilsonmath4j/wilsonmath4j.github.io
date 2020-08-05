@@ -16,9 +16,13 @@ body {
 
   }
 
+  .logo {
+    min-width: 200px;
+    max-width: 400px;
+  }
 
   .navigation ul {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
   }
   
