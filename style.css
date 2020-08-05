@@ -13,6 +13,7 @@ body {
     width: 100%; 
     z-index: 10;
     background: inherit;
+
   }
 
 
@@ -49,12 +50,11 @@ body {
 
 
   #main {
-    margin-top: 100px;
+    margin: 100px auto; 
     padding: 50px;
     text-align: center;
     width: 75%;  
     overflow: scroll;
-    margin-bottom: 100px;
   }
   
   h1 {
@@ -64,6 +64,16 @@ body {
     text-align: center;
     border: 3px dotted darkblue;
     border-radius: 10px;
+  }
+
+  h1 a  {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+ h1 a:hover{
+    font-weight:    800;
+    text-decoration: none;
   }
   
   h2 {
@@ -110,7 +120,6 @@ body {
   
   .footer {
     border: 1px solid LightGrey;
-    padding: 40px 0px;
     position: relative;
     text-align: center;
     width: 100%;
