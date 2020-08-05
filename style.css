@@ -1,5 +1,5 @@
 body {
-    background-color: #033b74;
+    background-color: #1961a9;
     font-family: 'Raleway', sans-serif;
   }
   
@@ -19,7 +19,7 @@ body {
 
   }
   
-  .navigation  li.logo {
+  .navigation  li.here {
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -41,7 +41,7 @@ body {
     background-image: url("images/panorama.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 150px;
     width: 100%;
     opacity: 0.75;
     border-radius: 5px;
@@ -66,20 +66,12 @@ body {
     font-style: bold;
   }
   
-  #banner .content h2 {
-    color: rgb(24, 18, 18);
-    text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-size:  35px;
-    border: 0px;
-  }
 
   #main {
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    width: 50%;  
+    width: 75%;  
     height: 500px; 
     overflow: scroll;
   }
@@ -94,11 +86,10 @@ body {
   h2 {
     border: 1px dotted red;
     color: red;
-    font-size: 14px;
+    font-size: 35px;
     line-height: 48px;
-    padding: 20px 30px;
-    margin: 30px 20px;
     text-align: center;
+    width: 100%;
   }
   
   h3 {
@@ -134,15 +125,16 @@ body {
 
   }
   
-  .share {
+  .footer {
     border: 1px solid LightGrey;
     padding: 40px 0px;
     position: relative;
     text-align: center;
     width: 100%;
+    font-weight: bold;
   }
   
-  .share a {
+  .footer a {
     background: red;
     border: 1px solid red;
     border-radius: 3px;
@@ -153,7 +145,7 @@ body {
     text-decoration: none;
   }
   
-  .share a:hover {
+  .footer a:hover {
     background: white;
     border: 1px solid red;
     color: red;
