@@ -10,6 +10,15 @@
   border: 0;
 }
 
+header  {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    background: inherit;
+}
 
 body {
     background-color: #fff;
@@ -33,6 +42,29 @@ body {
   .logo {
     min-width: 200px;
     max-width: 400px;
+  }
+
+  .logosmall  {
+    min-width: 200px;
+    max-width: 200px;
+    color: darkblue;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    border: 3px dotted darkblue;
+    border-radius: 10px;
+    text-decoration: none;
+
+  }
+
+  .logosmall a{
+    text-decoration: none;
+  }
+
+  .logosmall a:hover  {
+    text-decoration: none;
+    font-weight:    800;
+    text-decoration: none;
   }
 
   .navigation ul {
@@ -71,7 +103,7 @@ body {
   padding: .75em 15px;
   line-height: 1em;
   font-size: 1em;
-  color: #333;
+  color: darkblue;
 }
 
 .menu-toggle:hover,
@@ -83,6 +115,12 @@ body {
  Default styles + Mobile first
  Offscreen menu style
 */
+
+/* #menuflex {
+  display: flex;
+  flex-direction: row;
+} */
+
 .main-menu {
   position: absolute;
   display: none;
@@ -94,6 +132,7 @@ body {
   transition: left 0.3s ease,
         box-shadow 0.3s ease;
   z-index: 999;
+ 
 }
 
 .main-menu ul {
@@ -234,6 +273,7 @@ body {
     font-size: 26px;
     font-weight: 700;
   }
+
   
   p {
     color: darkblue;
@@ -296,6 +336,7 @@ body {
  /** MEDIA QUERIES **/
 @media only screen and (min-width: 768px) {
   #main-menu-toggle {display:none;}
+  .logosmall  {display: none;}
 }
 
 @media only screen and (max-width: 767px) {
