@@ -39,6 +39,18 @@ body {
 
   }
 
+  #submenu  {
+    display: flex;
+   
+    align-items: center;
+    flex-direction: row;
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    background: inherit;
+
+  }
+
   .logo {
     min-width: 200px;
     max-width: 400px;
@@ -67,6 +79,7 @@ body {
     text-decoration: none;
   }
 
+  /*top of page navigation*/
   .navigation ul {
     text-align: left;
     text-transform: uppercase;
@@ -80,7 +93,7 @@ body {
     padding: 10px 40px;
 
   }
-    
+  
   .navigation a {
     text-decoration: none;
     color:  darkgray;
@@ -97,6 +110,34 @@ body {
     font-weight:    800;
     text-decoration: none;
   }
+
+  /*submenu navigation*/
+  .subnav ul {
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .subnav li {
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color:  darkslateblue;
+    display:inline;
+    padding: 10px 40px;
+
+  }
+  
+  .subnav a {
+    text-decoration: none;
+    color:  darkslateblue;
+  }
+
+  
+  .subnav a:hover{
+    color:  darkslateblue;
+    font-weight:    800;
+    text-decoration: none;
+  }
+
 /* Button styling */
 .menu-toggle {
   display: inline-block;
@@ -297,7 +338,10 @@ body {
 
   .pull-quote {
     margin: 0 auto;
-    width: 70%;
+    width: intrinsic;           /* Safari/WebKit */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    width: max-content;
     border: dotted 2px rgb(143, 143, 197);
     font-weight: 600;
   }
