@@ -333,6 +333,24 @@ body {
     color: red;
   }
 
+  .contentgrid  {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto 60%;
+  }
+
+  .contentcolumnleft  {
+    background: mistyrose;
+    font-weight: 800;
+    position: relative;    
+  }
+
+  .contentcolumnright {
+    background: aliceblue;
+    font-weight: 600;
+    text-align: left;
+  }
+
  /** MEDIA QUERIES **/
 
  
