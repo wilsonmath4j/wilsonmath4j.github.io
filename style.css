@@ -280,7 +280,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     margin-top: 20px;
-    font-weight: 400;
+    font-weight: 500;
     border-left: dotted 3px lightblue;
     text-align: left;
     padding-left: 5px;
@@ -290,7 +290,7 @@ body {
     color: darkblue;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 500;
     text-align: left;
     margin-left: 30px;
   }
@@ -298,7 +298,8 @@ body {
   .pull-quote {
     margin: 0 auto;
     width: 70%;
-    border: dotted 2px darkblue;
+    border: dotted 2px rgb(143, 143, 197);
+    font-weight: 600;
   }
   
   
@@ -336,7 +337,13 @@ body {
   .contentgrid  {
     width: 80%;
     display: grid;
-    grid-template-columns: auto 60%;
+    grid-template-columns: 30% 60%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    align-content: center; /*ask Nikole why this isn't working*/
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contentcolumnleft  {
