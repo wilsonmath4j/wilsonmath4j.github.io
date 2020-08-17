@@ -356,14 +356,3 @@ body {
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {
-    #main-menu-toggle {display:none;}
-  .logosmall  {display: none;}
-}*/
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {
-  #main-menu-toggle {display:none;}
-  .logosmall  {display: none;}
-}*/
