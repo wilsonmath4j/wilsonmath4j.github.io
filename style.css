@@ -39,22 +39,13 @@ body {
 
   }
 
-  #submenu  {
-    display: flex;
-   
-    align-items: center;
-    flex-direction: row;
-    top: 0; 
-    width: 100%; 
-    z-index: 10;
-    background: inherit;
-
-  }
+  
 
   .logo {
     min-width: 200px;
     max-width: 400px;
   }
+
 
   .logosmall  {
     min-width: 200px;
@@ -110,34 +101,7 @@ body {
     font-weight:    800;
     text-decoration: none;
   }
-
-  /*submenu navigation*/
-  .subnav ul {
-    text-align: left;
-    text-transform: uppercase;
-  }
   
-  .subnav li {
-    font-weight: 400;
-    letter-spacing: .2rem;
-    color:  darkslateblue;
-    display:inline;
-    padding: 10px 40px;
-
-  }
-  
-  .subnav a {
-    text-decoration: none;
-    color:  darkslateblue;
-  }
-
-  
-  .subnav a:hover{
-    color:  darkslateblue;
-    font-weight:    800;
-    text-decoration: none;
-  }
-
 /* Button styling */
 .menu-toggle {
   display: inline-block;
@@ -324,7 +288,7 @@ body {
     font-weight: 500;
     border-left: dotted 3px lightblue;
     text-align: left;
-    padding-left: 5px;
+    padding: 5px 5px;
   }
   
   ul {
@@ -337,11 +301,8 @@ body {
   }
 
   .pull-quote {
-    margin: 0 auto;
-    width: intrinsic;           /* Safari/WebKit */
-    width: -moz-max-content;    /* Firefox/Gecko */
-    width: -webkit-max-content; /* Chrome */
-    width: max-content;
+    margin: 5px 5px;
+    padding: 5px 5px;
     border: dotted 2px rgb(143, 143, 197);
     font-weight: 600;
   }
@@ -384,8 +345,8 @@ body {
     grid-template-columns: 30% 60%;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
-    align-content: center; /*ask Nikole why this isn't working*/
-    object-position: center;
+    padding: 15px;
+   
     margin-left: auto;
     margin-right: auto;
   }
@@ -393,13 +354,54 @@ body {
   .contentcolumnleft  {
     background: mistyrose;
     font-weight: 800;
-    position: relative;    
+    vertical-align: middle;
+    display: table-cell;
+    
   }
 
   .contentcolumnright {
     background: aliceblue;
     font-weight: 600;
     text-align: left;
+  }
+
+  #submenu  {
+    display: flex;
+   
+    align-items: center;
+    flex-direction: row;
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    background: inherit;
+
+  }
+  
+  /*submenu navigation*/
+  .subnav ul {
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .subnav li {
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color:  darkslateblue;
+    display:inline;
+    padding: 10px 40px;
+
+  }
+  
+  .subnav a {
+    text-decoration: none;
+    color:  darkslateblue;
+  }
+
+  
+  .subnav a:hover{
+    color:  darkslateblue;
+    font-weight:    800;
+    text-decoration: none;
   }
 
  /** MEDIA QUERIES **/
@@ -417,8 +419,8 @@ body {
   #topmenu    {display: none;}
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 1391px and up) */
+@media only screen and (min-width: 1391px) {
   #main-menu-toggle {display:none;}
   .logosmall  {display: none;}
   #topmenu  {display: flex;}
