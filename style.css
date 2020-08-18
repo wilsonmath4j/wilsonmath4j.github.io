@@ -275,8 +275,7 @@ input[type=submit]:hover {
 
 /* Basic Style Stuff */
   #main {
-    margin: 100px auto; 
-    padding: 50px;
+    margin: 50px auto; 
     text-align: center;
     width: 75%;  
     overflow: scroll;
@@ -307,7 +306,7 @@ input[type=submit]:hover {
     font-size: 35px;
     line-height: 48px;
     text-align: center;
-    width: 100%;
+    width: 80%;
   }
   
   h3 {
@@ -444,20 +443,19 @@ input[type=submit]:hover {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #main-menu-toggle {display:inherit;}
-  #topmenu    {display: none;}
+  nav.navigation   {display: none;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #main-menu-toggle {display:inherit;}
-  #topmenu    {display: none;}
+  nav.navigation    {display: none;}
 }
 
 /* Medium devices (landscape tablets, 1391px and up) */
 @media only screen and (min-width: 1391px) {
   #main-menu-toggle {display:none;}
-  .logosmall  {display: none;}
-  #topmenu  {display: flex;}
+  nav.navigation  {display: inherit;}
 }
 
 
