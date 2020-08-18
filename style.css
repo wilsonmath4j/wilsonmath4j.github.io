@@ -57,6 +57,7 @@ body {
     border: 3px dotted darkblue;
     border-radius: 10px;
     text-decoration: none;
+    margin-bottom: 50px;
 
   }
 
@@ -81,7 +82,7 @@ body {
     letter-spacing: .2rem;
     color:  darkgray;
     display:inline;
-    padding: 10px 40px;
+    padding: 10px 10px;
 
   }
   
@@ -296,7 +297,6 @@ body {
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-    text-align: left;
     margin-left: 30px;
   }
 
@@ -379,7 +379,6 @@ body {
   
   /*submenu navigation*/
   .subnav ul {
-    text-align: left;
     text-transform: uppercase;
   }
   
@@ -388,7 +387,7 @@ body {
     letter-spacing: .2rem;
     color:  darkslateblue;
     display:inline;
-    padding: 10px 40px;
+    padding: 10px 10px;
 
   }
   
