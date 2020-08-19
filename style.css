@@ -1,15 +1,4 @@
-/* Screen reader only */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
+/* Basic styles */
 header  {
   display: flex;
   flex-direction: row;
@@ -25,84 +14,265 @@ body {
     font-family: 'Raleway', sans-serif;
   }
 
-/* Main menu for bigger screen? */
-  #topmenu  {
-    display: flex;
-    height: 140px;
-    align-items: center;
-    flex-direction: row;
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    z-index: 10;
-    background: inherit;
+h1 {
+  color: darkblue;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  border: 3px dotted darkblue;
+  border-radius: 10px;
+}
 
-  }
+h1 a  {
+  text-decoration: none;
+  color: darkblue;
+}
 
+h1 a:hover{
+  font-weight:    800;
+  text-decoration: none;
+}
+
+h2 {
+  border: 3px dotted red;
+  color:  darkgrey;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p {
+  color: darkblue;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  border-left: dotted 3px lightblue;
+  text-align: left;
+  padding: 5px 5px;
+}
+
+ul {
+  color: darkblue;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Section styles */
+#main {
+  margin: auto auto; 
+  text-align: center;
+  width: 75%;  
+  overflow: scroll;
+  padding-top: 120px;
+}
+
+#topmenu  {
+  display: flex;
+  height: 140px;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  z-index: 10;
+  background: inherit;
+
+}
+
+.logo {
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.logosmall  {
+  min-width: 200px;
+  max-width: 200px;
+  color: darkblue;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  border: 3px dotted darkblue;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+
+}
+
+.logosmall a{
+  text-decoration: none;
+}
+
+.logosmall a:hover  {
+  text-decoration: none;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+/*top of page navigation*/
+.navigation ul {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  font-weight: 300;
+  letter-spacing: .2rem;
+  color:  darkgray;
+  display:inline;
+  padding: 10px 10px;
+
+}
+
+.navigation a {
+  text-decoration: none;
+  color:  darkgray;
+}
+
+.navigation  li.here {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.navigation a:hover{
+  color:  black;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+.pull-quote {
+  margin: 5px 5px;
+  padding: 5px 5px;
+  border: dotted 2px rgb(143, 143, 197);
+  font-weight: 600;
+}
+
+.footer {
+  border: 1px solid LightGrey;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  index: 10;
+  background: inherit;
+}
+
+.footer a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.footer a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.contentgrid  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10px;
+  row-gap: 20px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentcolumnleft  {
+  background: mistyrose;
+  font-weight: 800;
+  vertical-align: middle;
+  display: table-cell;
   
+}
 
-  .logo {
-    min-width: 200px;
-    max-width: 400px;
-  }
+.contentcolumnright {
+  background: aliceblue;
+  font-weight: 600;
+  text-align: left;
+}
+
+.submenugrid  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 15px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.submenuitem a {
+  text-decoration: none;
+  color:  darkslateblue;
+}
+
+.submenuitem a:hover{
+  color:  darkslateblue;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+.syllabusmenu  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  column-gap: 15px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.syllabusitem a {
+  text-decoration: none;
+  color:  darkslateblue;
+}
+
+.syllabusitem a:hover{
+  color:  darkslateblue;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+/* Function styles */
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 
 
-  .logosmall  {
-    min-width: 200px;
-    max-width: 200px;
-    color: darkblue;
-    font-size: 26px;
-    font-weight: 600;
-    text-align: center;
-    border: 3px dotted darkblue;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-bottom: 50px;
-
-  }
-
-  .logosmall a{
-    text-decoration: none;
-  }
-
-  .logosmall a:hover  {
-    text-decoration: none;
-    font-weight:    800;
-    text-decoration: none;
-  }
-
-  /*top of page navigation*/
-  .navigation ul {
-    text-align: left;
-    text-transform: uppercase;
-  }
-  
-  .navigation li {
-    font-weight: 300;
-    letter-spacing: .2rem;
-    color:  darkgray;
-    display:inline;
-    padding: 10px 10px;
-
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color:  darkgray;
-  }
-
-  .navigation  li.here {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 4px;
-  }
-  
-  .navigation a:hover{
-    color:  black;
-    font-weight:    800;
-    text-decoration: none;
-  }
-  
 /* Button styling */
 .menu-toggle {
   display: inline-block;
@@ -122,11 +292,6 @@ body {
  Offscreen menu style
 */
 
-/* #menuflex {
-  display: flex;
-  flex-direction: row;
-} */
-
 .main-menu {
   position: absolute;
   display: none;
@@ -138,7 +303,6 @@ body {
   transition: left 0.3s ease,
         box-shadow 0.3s ease;
   z-index: 999;
- 
 }
 
 .main-menu ul {
@@ -183,10 +347,6 @@ body {
 
 /*
  On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
 */
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
@@ -235,210 +395,7 @@ body {
   }
 }
 
-/* Contact Form starts here */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-/*Contact form ENDS here*/
-
-
-/* Basic Style Stuff */
-  #main {
-    margin: 50px auto; 
-    text-align: center;
-    width: 75%;  
-    overflow: scroll;
-  }
-  
-  h1 {
-    color: darkblue;
-    font-size: 42px;
-    font-weight: 600;
-    text-align: center;
-    border: 3px dotted darkblue;
-    border-radius: 10px;
-  }
-
-  h1 a  {
-    text-decoration: none;
-    color: darkblue;
-  }
-
- h1 a:hover{
-    font-weight:    800;
-    text-decoration: none;
-  }
-  
-  h2 {
-    border: 1px dotted red;
-    color:  darkgrey;
-    font-size: 35px;
-    line-height: 48px;
-    text-align: center;
-    width: 80%;
-  }
-  
-  h3 {
-    color: red;
-    font-size: 26px;
-    font-weight: 700;
-  }
-
-  
-  p {
-    color: darkblue;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 20px;
-    font-weight: 500;
-    border-left: dotted 3px lightblue;
-    text-align: left;
-    padding: 5px 5px;
-  }
-  
-  ul {
-    color: darkblue;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  .pull-quote {
-    margin: 5px 5px;
-    padding: 5px 5px;
-    border: dotted 2px rgb(143, 143, 197);
-    font-weight: 600;
-  }
-  
-  
-  .footer {
-    border: 1px solid LightGrey;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    index: 10;
-    background: inherit;
-  }
-  
-  .footer a {
-    background: red;
-    border: 1px solid red;
-    border-radius: 3px;
-    color: white;
-    display: inline-block;
-    margin: 10px;
-    padding: 14px;
-    text-decoration: none;
-  
-  }
-  
-  .footer a:hover {
-    background: white;
-    border: 1px solid red;
-    color: red;
-  }
-
-  .contentgrid  {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 30% 60%;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    padding: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contentcolumnleft  {
-    background: mistyrose;
-    font-weight: 800;
-    vertical-align: middle;
-    display: table-cell;
-    
-  }
-
-  .contentcolumnright {
-    background: aliceblue;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  #submenu  {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    top: 0; 
-    width: 100%; 
-    z-index: 10;
-    background: inherit;
-
-  }
-  
-  /*submenu navigation*/
-  .subnav ul {
-    text-transform: uppercase;
-  }
-  
-  .subnav li {
-    font-weight: 400;
-    letter-spacing: .2rem;
-    color:  darkslateblue;
-    display:inline;
-    padding: 0px 10px;
-
-  }
-  
-  .subnav a {
-    text-decoration: none;
-    color:  darkslateblue;
-  }
-
-  
-  .subnav a:hover{
-    color:  darkslateblue;
-    font-weight:    800;
-    text-decoration: none;
-  }
-
- /** MEDIA QUERIES **/
-
+/** MEDIA QUERIES **/
  
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -457,5 +414,3 @@ input[type=submit]:hover {
   #main-menu-toggle {display:none;}
   nav.navigation  {display: inherit;}
 }
-
-
