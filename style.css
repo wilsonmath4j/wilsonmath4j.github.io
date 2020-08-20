@@ -74,17 +74,18 @@ ul {
 
 /* Section styles */
 #main {
-  margin: auto auto; 
+  margin: 100px auto 150px auto;
   text-align: center;
   width: 75%;  
   overflow: scroll;
   padding-top: 120px;
+  background: inherit;
 }
 
 #txtbox {
-  font-size: 18pt;
-  height: 42px;
-  width : 300px;
+  font-size: 16pt;
+  height: 200px;
+  width : 500px;
 }
 
 #topmenu  {
@@ -135,6 +136,12 @@ ul {
   margin: 5px 5px;
   padding: 5px 5px;
   border: dotted 2px rgb(143, 143, 197);
+  font-weight: 600;
+}
+
+.pull-quote-sub {
+  margin: 5px 5px;
+  padding: 5px 5px;
   font-weight: 600;
 }
 
@@ -210,7 +217,7 @@ ul {
 .contentcolumnleft  {
   background: mistyrose;
   font-weight: 800;
-  vertical-align: middle;
+  padding-top: 20px;
   display: table-cell;
   
 }

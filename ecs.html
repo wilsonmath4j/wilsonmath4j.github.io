@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <title>The Wilsonmath: ECS</title>
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
-  <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<body>
-  
-  <header>
+  <body>
+    <header>
+      <a href="#main-menu"
+         id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+      </a>
     
-    <a href="#main-menu"
-       id="main-menu-toggle"
-       class="menu-toggle"
-       aria-label="Open main menu">
-      <span class="sr-only">Open main menu</span>
-      <span class="fa fa-bars fa-2x" aria-hidden="true"></span>
-    </a>
-    
-    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
       <a href="#main-menu-toggle"
          id="main-menu-close"
          class="menu-close"
@@ -34,8 +32,8 @@
         <li><a href="ecs.html">Exploring Computer Science</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <a href="#main-menu-toggle"
+      </nav>
+      <a href="#main-menu-toggle"
        class="backdrop"
        tabindex="-1"
        aria-hidden="true" hidden></a>
@@ -49,42 +47,115 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      
       </div>
     </header>
 
-
-
-  <div id="main">
-    <p class="pull-quote">Exploring Computer Science (ECS) is designed to introduce students to the breadth of the field of computer science through an exploration of engaging and accessible topics. Rather than focusing the entire course on learning particular software tools or programming languages, the course is designed to focus on the conceptual ideas of computing and help students understand why certain tools or languages might be utilized to solve particular problems. The goal of Exploring Computer Science is to develop in students the computational practices of algorithm development, problem solving and programming within the context of problems that are relevant to the lives of today’s students. Students will also be introduced to topics such as interface design, limits of computers, and societal and ethical issues.
-    </p>  
+    <div id="main">
+      <h3>Overview</h3>
+      <p class="pull-quote">Exploring Computer Science (ECS) is designed to introduce students to the breadth of the field of computer science through an exploration of engaging and accessible topics. Rather than focusing the entire course on learning particular software tools or programming languages, the course is designed to focus on the conceptual ideas of computing and help students understand why certain tools or languages might be utilized to solve particular problems. The goal of Exploring Computer Science is to develop in students the computational practices of algorithm development, problem solving and programming within the context of problems that are relevant to the lives of today’s students. Students will also be introduced to topics such as interface design, limits of computers, and societal and ethical issues.
+      <br><br>
+      It is recommended that students have completed an Algebra course prior to enrolling. ECS is designed to be a college preparatory high school course and thus should provide a rigorous but accessible introduction to computer science. No previous computer science experience is required.
+      </p>  
     
-    <div class="syllabusmenu">     
-      <div class="syllabusitem"><a href="#content">Content</a></div>
-      <div class="syllabusitem"><a href="#assignments">Expected Assignments</a></div>
-      <div class="syllabusitem"><a href="#grades">Grade Calculation</a></div>
-    </div>
+      <div class="syllabusmenu">     
+        <div class="syllabusitem"><a href="#content">Content</a></div>
+        <div class="syllabusitem"><a href="#assignments">Expected Assignments</a></div>
+        <div class="syllabusitem"><a href="#grades">Grade Calculation</a></div>
+      </div>
+      
       <a id="content"></a><h3>Content</h3>
       <p>The Exploring Computer Science curriculum was developed around a framework of both computer science content and computational practice. This combination of both content and practices provides students with a sense of what computer scientists do. ECS is aligned with both the K-12 Computer Science Framework and the CSTA Computer Science Standards.</p>
 
+      <span class="pull-quote">Unit Content: ECS A</span>
+        <br>
+      <div class="contentgrid">
+        <div class="contentcolumnleft">Unit 1: Human Computer Interaction</div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>Computers and the internet</li>
+            <li>Models of Intelligent Behavior</li>
+            <li>Societal impacts of computing</li>
+          </ul>
+        </div>
+        <div class="contentcolumnleft">Unit 2: Problem Solving</div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>Algorithms and abstraction</li>
+            <li>Connections between Mathematics and Computer Science</li>
+            <li>Societal impacts of computing</li>
+          </ul>
+        </div>
+        <div class="contentcolumnleft">Unit 3: Web Design</div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>Web page design and development</li>
+            <li>Computers and the internet</li>
+            <li>Algorithms and abstraction</li>
+            <li>Societal impacts of computing</li>
+          </ul>
+        </div>
+      </div>
 
-<span class="pull-quote">Content Standards</span>
-<br>
-
-<!--<div class="contentgrid">
-  <div class="contentcolumnleft">3-D Modeling</div>
-  <div class="contentcolumnright">Use geometric shapes, their measures, and their properties to describe objects.</div>
-  <div class="contentcolumnleft">Euclidean Basics</div>
-  <div class="contentcolumnright">Know precise definitions of angle, circle, perpendicular line, parallel line, and line segment. Use coordinates to prove simple geometric theorems algebraically. Solve geometric problems involving slope.</div>
-  <div class="contentcolumnleft">Triangle Similarity</div>
-  <div class="contentcolumnright">Use congruence and similarity criteria for triangles to solve problems and to prove relationships in geometric figures.</div>
-  <div class="contentcolumnleft">Right Triangle Trigonometry</div>
-  <div class="contentcolumnright">Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.</div> 
-  <div class="contentcolumnleft">Non-Right Triangle Trigonometry</div>
-  <div class="contentcolumnright">Understand and apply the Law of Sines and the Law of Cosines to find unknown measurements in right and non-right triangles.</div>
-</div>
+      <span class="pull-quote">Unit Content: ECS B</span>
+      <br>
+      <div class="contentgrid">
+        <div class="contentcolumnleft">Unit 4: Introduction to Programming</div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>Programming</li>
+            <li>Algorithms and abstractions</li>
+            <li>Connections between mathematics and computer science</li>
+            <li>Societal impacts of computing</li>
+          </ul>
+        </div> 
+        <div class="contentcolumnleft">Unit 5: Computing and Data Analysis</div>
+        <div class="contentcolumnright">
+          <ul>
+           <li>Data and information</li>
+           <li>Algorithms and abstraction</li>
+           <li>Connections between mathematics and computer science</li>
+           <li>Programming</li>
+           <li>Societal impacts of computing</li>  
+          </ul>
+        </div>
+      </div>
+    
+      <span class="pull-quote-sub">ECS B culminates in a Capstone project chosen from the following topics:</span>
+      <div class="syllabusmenu">
+        <div class="contentcolumnleft">Unit 6 Capstone: Robotics</div>
+        <div class="contentcolumnleft">Unit 6 Capstone: E-Textiles</div>
+        <div class="contentcolumnleft">Unit 6 Capstone: Artificial Intelligence (AI)</div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>The effects innovations in robotics have had on people.</li>
+            <li>The significance of processes that have been automated because of robots.</li>
+            <li>How innovations in robotics have spurred additional innovations.</li>
+            <li>The features of robots</li>
+            <li>Familiarization with the robots and software</li>
+            <li>Robotics projects</li> 
+           </ul>
+        </div> 
+        <div class="contentcolumnright">
+          <ul>
+            <li>Introduce the concept of aesthetic design and personalization.</li>
+            <li>Designing and reading circuit diagrams</li>
+            <li>Three-dimensional projects</li>
+            <li>Programming for digital input: Sequences, conditionals, embedded conditionals or Boolean statements</li>
+            <li>Sensor design (handcrafted)</li>  
+           </ul>
+        </div>
+        <div class="contentcolumnright">
+          <ul>
+            <li>Explain key terminology associated with the field of AI.</li>
+            <li>Identify the AI being used, such as image recognition, speech recognition, translation.</li>
+            <li>Gain an understanding of how a neural network functions.</li>
+            <li>Build, train, & test an AI system.</li>
+            <li>Consider algorithmic bias, privacy and collection of data, and the impact of AI in our society.</li>  
+           </ul>
+        </div>
+      </div>
     </div>
-  -->
+
   <div class="footer">
     <a href="https://nehs.4j.lane.edu/">NEHS</a>
     <a href="https://sites.google.com/4j.lane.edu/csnehs/opportunities">CS @ NEHS</a>
