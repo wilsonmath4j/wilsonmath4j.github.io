@@ -3,10 +3,10 @@ header  {
   display: flex;
   flex-direction: row;
   position: fixed;
-    top: 0; 
-    width: 100%; 
-    z-index: 10;
-    background: inherit;
+  top: 0; 
+  width: 100%; 
+  z-index: 10;
+  background: inherit;
 }
 
 body {
@@ -81,12 +81,6 @@ ul {
   height: 140px;
   align-items: center;
   flex-direction: row;
-  position: fixed;
-  top: 0; 
-  width: 100%; 
-  z-index: 10;
-  background: inherit;
-
 }
 
 .logo {
