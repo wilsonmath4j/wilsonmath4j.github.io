@@ -14,6 +14,11 @@ body {
     font-family: 'Raleway', sans-serif;
   }
 
+form  {
+    font-weight: 600;
+    text-align: left;
+}
+
 h1 {
   color: darkblue;
   font-size: 42px;
@@ -76,6 +81,12 @@ ul {
   padding-top: 120px;
 }
 
+#txtbox {
+  font-size: 18pt;
+  height: 42px;
+  width : 300px;
+}
+
 #topmenu  {
   display: flex;
   height: 140px;
@@ -86,30 +97,6 @@ ul {
 .logo {
   min-width: 200px;
   max-width: 400px;
-}
-
-.logosmall  {
-  min-width: 200px;
-  max-width: 200px;
-  color: darkblue;
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  border: 3px dotted darkblue;
-  border-radius: 10px;
-  text-decoration: none;
-  margin-bottom: 50px;
-
-}
-
-.logosmall a{
-  text-decoration: none;
-}
-
-.logosmall a:hover  {
-  text-decoration: none;
-  font-weight:    800;
-  text-decoration: none;
 }
 
 /*top of page navigation*/
