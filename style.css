@@ -1,154 +1,437 @@
+/* Basic styles */
+header  {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  z-index: 10;
+  background: inherit;
+}
+
 body {
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
   }
 
-  #topmenu  {
-    display: flex;
-    height: 140px;
-    align-items: center;
-    flex-direction: row;
+h1 {
+  color: darkblue;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  border: 3px dotted darkblue;
+  border-radius: 10px;
+}
+
+h1 a  {
+  text-decoration: none;
+  color: darkblue;
+}
+
+h1 a:hover{
+  font-weight:    800;
+  text-decoration: none;
+}
+
+h2 {
+  border: 3px dotted red;
+  color:  darkgrey;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p {
+  color: darkblue;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+  border-left: dotted 3px lightblue;
+  text-align: left;
+  padding: 5px 5px;
+}
+
+ul {
+  color: darkblue;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Section styles */
+#main {
+  margin: auto auto; 
+  text-align: center;
+  width: 75%;  
+  overflow: scroll;
+  padding-top: 120px;
+}
+
+#topmenu  {
+  display: flex;
+  height: 140px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo {
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.logosmall  {
+  min-width: 200px;
+  max-width: 200px;
+  color: darkblue;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  border: 3px dotted darkblue;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+
+}
+
+.logosmall a{
+  text-decoration: none;
+}
+
+.logosmall a:hover  {
+  text-decoration: none;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+/*top of page navigation*/
+.navigation ul {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  font-weight: 300;
+  letter-spacing: .2rem;
+  color:  darkgray;
+  display:inline;
+  padding: 10px 10px;
+
+}
+
+.navigation a {
+  text-decoration: none;
+  color:  darkgray;
+}
+
+.navigation  li.here {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.navigation a:hover{
+  color:  black;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+.pull-quote {
+  margin: 5px 5px;
+  padding: 5px 5px;
+  border: dotted 2px rgb(143, 143, 197);
+  font-weight: 600;
+}
+
+.back {
+  border: none;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  background: inherit;
+}
+
+.back a {
+  background: lightcoral;
+  border: 1px solid lightcoral;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.back a:hover {
+  background: white;
+  border: 1px solid lightcoral;
+  color: lightcoral;
+}
+
+.footer {
+  border: 1px solid LightGrey;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  index: 10;
+  background: inherit;
+}
+
+.footer a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.footer a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.contentgrid  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10px;
+  row-gap: 20px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentcolumnleft  {
+  background: mistyrose;
+  font-weight: 800;
+  vertical-align: middle;
+  display: table-cell;
+  
+}
+
+.contentcolumnright {
+  background: aliceblue;
+  font-weight: 600;
+  text-align: left;
+}
+
+.submenugrid  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 15px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.submenuitem a {
+  text-decoration: none;
+  color:  darkslateblue;
+}
+
+.submenuitem a:hover{
+  color:  darkslateblue;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+.syllabusmenu  {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  column-gap: 15px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.syllabusitem a {
+  text-decoration: none;
+  color:  darkslateblue;
+}
+
+.syllabusitem a:hover{
+  color:  darkslateblue;
+  font-weight:    800;
+  text-decoration: none;
+}
+
+/* Function styles */
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: darkblue;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+
+.main-menu {
+  position: absolute;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.3s ease,
+        box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+  position: absolute;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop{
     position: fixed;
-    top: 0; 
-    width: 100%; 
-    z-index: 10;
-    background: inherit;
+  }
+}
 
-  }
+/** MEDIA QUERIES **/
+ 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #main-menu-toggle {display:inherit;}
+  nav.navigation   {display: none;}
+}
 
-  .logo {
-    min-width: 200px;
-    max-width: 400px;
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #main-menu-toggle {display:inherit;}
+  nav.navigation    {display: none;}
+}
 
-  .navigation ul {
-    text-align: left;
-    text-transform: uppercase;
-  }
-  
-  .navigation li {
-    font-weight: 300;
-    letter-spacing: .2rem;
-    color:  darkgray;
-    display:inline;
-    padding: 10px 40px;
-
-  }
-    
-  .navigation a {
-    text-decoration: none;
-    color:  darkgray;
-  }
-
-  .navigation  li.here {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 4px;
-  }
-  
-  .navigation a:hover{
-    color:  black;
-    font-weight:    800;
-    text-decoration: none;
-  }
-
-
-  #main {
-    margin: 100px auto; 
-    padding: 50px;
-    text-align: center;
-    width: 75%;  
-    overflow: scroll;
-  }
-  
-  h1 {
-    color: darkblue;
-    font-size: 42px;
-    font-weight: 600;
-    text-align: center;
-    border: 3px dotted darkblue;
-    border-radius: 10px;
-  }
-
-  h1 a  {
-    text-decoration: none;
-    color: darkblue;
-  }
-
- h1 a:hover{
-    font-weight:    800;
-    text-decoration: none;
-  }
-  
-  h2 {
-    border: 1px dotted red;
-    color:  darkgrey;
-    font-size: 35px;
-    line-height: 48px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  h3 {
-    color: red;
-    font-size: 26px;
-    font-weight: 700;
-  }
-  
-  p {
-    color: darkblue;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-left: dotted 3px lightblue;
-    text-align: left;
-    padding-left: 5px;
-  }
-  
-  ul {
-    color: darkblue;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
-    text-align: left;
-    margin-left: 30px;
-  }
-
-  .pull-quote {
-    margin: 0 auto;
-    width: 70%;
-    border: dotted 2px darkblue;
-  }
-  
-  
-  .footer {
-    border: 1px solid LightGrey;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    index: 10;
-    background: inherit;
-  }
-  
-  .footer a {
-    background: red;
-    border: 1px solid red;
-    border-radius: 3px;
-    color: white;
-    display: inline-block;
-    margin: 10px;
-    padding: 14px;
-    text-decoration: none;
-  
-  }
-  
-  .footer a:hover {
-    background: white;
-    border: 1px solid red;
-    color: red;
-  }
+/* Medium devices (landscape tablets, 1391px and up) */
+@media only screen and (min-width: 1391px) {
+  #main-menu-toggle {display:none;}
+  nav.navigation  {display: inherit;}
+}
