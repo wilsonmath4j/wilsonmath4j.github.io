@@ -74,7 +74,7 @@ ul {
 
 /* Section styles */
 #main {
-  margin: 100px auto 150px auto;
+  margin: 50px auto 150px auto;
   text-align: center;
   width: 75%;  
   overflow: scroll;
@@ -224,6 +224,16 @@ ul {
 
 .contentcolumnright {
   background: aliceblue;
+  font-weight: 600;
+  text-align: left;
+}
+
+.grademenuitemleft  {
+  font-weight: 600;
+  text-align: right;
+}
+
+.grademenuitemright  {
   font-weight: 600;
   text-align: left;
 }
